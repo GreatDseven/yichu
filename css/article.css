@@ -79,6 +79,17 @@ td {
 .clearfix {
   *zoom: 1;
 }
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:active,
+a:visited,
+a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
 .wrap {
   position: absolute;
   width: 100%;
@@ -183,7 +194,7 @@ header p {
   color: #6e6a6b;
 }
 .main .main-2-foot {
-  width: 2.8rem;
+  width: 3.6rem;
   float: right;
   margin-top: 0.5rem;
   padding-left: 0.6rem;

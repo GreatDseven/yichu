@@ -79,6 +79,17 @@ td {
 .clearfix {
   *zoom: 1;
 }
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:active,
+a:visited,
+a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
 .wrap {
   position: absolute;
   top: 0;

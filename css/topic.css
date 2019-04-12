@@ -79,6 +79,17 @@ td {
 .clearfix {
   *zoom: 1;
 }
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:active,
+a:visited,
+a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
 .wrap {
   position: absolute;
   width: 100%;
@@ -195,7 +206,7 @@ footer {
   width: 3rem;
 }
 .main-3 .art-foot-2 {
-  width: 2.8rem;
+  width: 3.4rem;
   float: right;
   padding-left: 0.6rem;
 }
@@ -218,9 +229,10 @@ footer {
 footer .footer-inner {
   width: 100%;
   padding: 0.3rem 0.4rem 0.3rem;
+  display: flex;
+  justify-content: space-between;
 }
 footer .footer-inner a {
-  float: left;
   display: block;
   width: 0.5rem;
   margin-right: 0.9rem;

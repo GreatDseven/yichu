@@ -79,6 +79,17 @@ td {
 .clearfix {
   *zoom: 1;
 }
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:active,
+a:visited,
+a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
 .wrap {
   position: absolute;
   width: 100%;
@@ -115,9 +126,10 @@ footer {
 }
 .header-inner {
   padding: 0.5rem 0.3rem 0.2rem;
+  display: flex;
+  justify-content: space-between;
 }
 .header-inner > div {
-  float: left;
   margin-right: 1.6rem;
 }
 .header-inner > div:last-child {
@@ -178,7 +190,7 @@ header .header-inner .header-two span {
 }
 .main .main-list-inner {
   height: 1rem;
-  padding: 0.1rem 0.6rem 0.2rem 0.6rem;
+  padding: 0.1rem 0.6rem 0.3rem 0.6rem;
   box-shadow: 0.01rem 0.05rem 0.1rem 0.06rem #e2e2e2 inset;
   margin: 0.3rem 0.3rem 0.6rem 0.3rem;
   border-radius: 2px;
@@ -187,7 +199,7 @@ header .header-inner .header-two span {
 }
 .main .main-list a {
   display: block;
-  line-height: 0.8rem;
+  line-height: 0.5em;
 }
 .main .main-list a i {
   font-size: 0.4rem;
@@ -267,7 +279,6 @@ header .header-inner .header-two span {
   width: 3.3rem;
 }
 .main .art-foot {
-  /* margin-top: 0.2rem; */
   width: 100%;
 }
 .main .art-foot-1 {
@@ -275,7 +286,7 @@ header .header-inner .header-two span {
   width: 3rem;
 }
 .main .art-foot-2 {
-  width: 2.8rem;
+  width: 3.4rem;
   float: right;
   padding-left: 0.6rem;
 }
@@ -298,9 +309,10 @@ header .header-inner .header-two span {
 footer .footer-inner {
   width: 100%;
   padding: 0.3rem 0.4rem 0.3rem;
+  display: flex;
+  justify-content: space-between;
 }
 footer .footer-inner a {
-  float: left;
   display: block;
   width: 0.5rem;
   margin-right: 0.9rem;

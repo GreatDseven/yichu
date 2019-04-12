@@ -79,6 +79,17 @@ td {
 .clearfix {
   *zoom: 1;
 }
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:active,
+a:visited,
+a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
 .wrap {
   position: absolute;
   width: 100%;
@@ -152,7 +163,7 @@ header p {
 }
 .main-inner .swiper-container .swiper-slide img {
   margin-bottom: 0.3rem;
-  width: 2.6rem;
+  width: 2.7rem;
   display: block;
 }
 .main-inner .hengxian {

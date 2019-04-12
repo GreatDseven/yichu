@@ -79,31 +79,43 @@ td {
 .clearfix {
   *zoom: 1;
 }
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:active,
+a:visited,
+a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
 .wrap {
   position: absolute;
   left: 0;
-  top: 0;
   right: 0;
+  top: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
   background-image: url(../images/hkhd.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
-.wrap .chahao {
+.header {
+  width: 100%;
+}
+header .chahao {
   padding-top: 0.1rem;
   float: left;
   margin-left: 0.5rem;
   text-decoration: none;
 }
-.wrap .chahao i {
+header .chahao i {
   font-size: 0.4rem;
   color: #fff;
   font-weight: 100;
 }
-.wrap .zhaohui {
+header .zhaohui {
   padding-top: 0.7rem;
   margin-right: 0.5rem;
   float: right;
@@ -113,11 +125,18 @@ td {
 }
 .main {
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 0.4rem;
   width: 4.2rem;
-  height: 4.2rem;
 }
-.main input {
+.main img {
+  display: block;
+  width: 1.7rem;
+  margin: 0 auto;
+  margin-bottom: 1.6rem;
+}
+.main-inner input {
+  float: left;
+  width: 3.6rem;
   margin-left: 0.1rem;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
@@ -127,26 +146,30 @@ td {
   outline: none;
   border-bottom: 1px solid #fff;
 }
-.main input::-webkit-input-placeholder {
+.main-inner input::-webkit-input-placeholder {
   color: #d9f5f5;
 }
-.main i {
+.main-inner form i {
+  display: block;
+  float: left;
   font-size: 0.3rem;
+  line-height: 0.4rem;
   color: #d7f6f5;
+  margin-right: 0.14rem;
 }
-.main .quan {
+.main-inner .quan {
   display: block;
   width: 4.2rem;
   height: 0.8rem;
   border: 1px solid #fff;
   border-radius: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   cursor: pointer;
   text-decoration: none;
 }
-.main .join {
-  margin-top: 0.05rem;
-  margin-left: 0.05rem;
+.main-inner .join {
+  margin-top: 0.03rem;
+  margin-left: 0.03rem;
   width: 4.1rem;
   height: 0.7rem;
   background-color: #8bdfe0;
@@ -156,19 +179,20 @@ td {
   text-align: center;
   line-height: 0.7rem;
 }
-.main span {
-  margin-top: 0.5rem;
+.main-inner span {
+  margin-top: 0.2rem;
   display: block;
   font-size: 0.3rem;
   text-align: center;
   color: #fff;
 }
-.main .join-icon {
+.main-inner .join-icon {
   width: 4.2rem;
   margin: 0 auto;
-  margin-top: 1.2rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.1rem;
 }
-.main .join-icon a {
+.main-inner .join-icon a {
   float: left;
   display: block;
   width: 1rem;
@@ -178,13 +202,23 @@ td {
   border-radius: 50%;
   text-decoration: none;
 }
-.main .join-icon a:last-child {
+.main-inner .join-icon a:last-child {
   margin-right: 0;
 }
-.main .join-icon a i {
+.main-inner .join-icon a i {
   display: block;
   font-size: 0.5rem;
+  line-height: 0.5rem;
+  color: #d7f6f5;
   text-align: center;
   /* margin: 0 auto; */
   line-height: 1rem;
+}
+.main > p {
+  font-size: 0.24rem;
+  margin-top: 0.5rem;
+  line-height: 1.2rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
 }
